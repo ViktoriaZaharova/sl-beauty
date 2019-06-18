@@ -1,0 +1,44 @@
+.reviews-content
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-around
+  margin: 40px 0 20px
+
+.reviews-box
+  display: flex
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+  align-items: center
+  position: relative
+  max-width: 500px
+  margin: 0 0 30px
+  padding: 20px 20px 20px 60px
+  box-sizing: border-box
+  border: 1px solid $accent
+    radius: 10px
+  .image
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+    width: 90px
+    height: 90px
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid $accent
+      radius: 50%
+    min-width: 90px
+    overflow: hidden
+    position: absolute
+    left: -45px
+    top: 20px
+    z-index: 2
+    background: #fff
+  .name
+  .reviews-user
+    font-size: 13px
+    margin: 15px 0
+    p
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+

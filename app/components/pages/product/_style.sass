@@ -1,0 +1,104 @@
+//page product
+.product-content
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-around
+  padding: 0 50px
+  box-sizing: border-box
+
+.product-content__image
+  width: 455px
+  border: 1px solid #e2e2e2
+    radius: 10px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  box-sizing: border-box
+  padding: 10px
+
+.product-content__information
+  width: calc(100% - 455px)
+  padding: 0 0 0 30px
+  box-sizing: border-box
+  .line
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 0 40px
+  .box
+    display: flex
+    align-items: center
+    h6
+      margin: 0 5px 0 0
+      font-family: 'arial-bold', sans-serif
+  .box-price
+    align-items: flex-end
+
+.availability-box
+  display: flex
+  align-items: center
+  p
+    text-decoration: underline
+  h6
+    font-family: 'arial-bold', sans-serif
+    
+.mini-description
+  padding: 5px
+  border:
+    bottom: 1px solid #eaa2e2
+  margin: 0 0 30px
+
+.box-price
+  .price-wrapper
+    margin: 0 0 0 10px
+
+.product-characteristics
+  width: 100%
+  margin: 40px 0 0
+
+.customer-reviews
+  width: 100%
+  padding: 0 20px
+  box-sizing: border-box
+  margin: 0 0 30px
+  .text
+    padding: 20px
+  .name
+    width: 100%
+    border-bottom: 1px solid $header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    padding: 0 0 10px
+    h4
+      font-family: 'arial-bold', sans-serif
+
+.date
+  color: #6b748e
+  font-size: 12px
+
+
+.form-reviews
+  margin: 40px 0 0
+  border: 7px solid rgba(113, 39, 245, 0.5)
+  width: 100%
+  padding: 20px 30px
+  label
+    margin: 0 0 20px
+    input
+      height: 40px
+      border:
+        bottom: 1px solid $footer
+      padding: 0
+    textarea
+      border: 1px solid $footer
+  h5
+    margin: 0 0 15px
+
+
+

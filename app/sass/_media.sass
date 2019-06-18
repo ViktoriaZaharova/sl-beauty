@@ -1,0 +1,347 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1150px)
+  .category-content__wrapper .tabs__content
+    justify-content: space-around
+
+@media only screen and (max-width : 1050px)
+  .brand-content
+    justify-content: space-around
+
+  .brand-box
+    width: 220px
+    height: 170px
+
+  .sorting-box
+    font-size: 14px
+
+  .product-content__image
+    width: 300px
+
+  .product-content__information
+    width: calc(100% - 300px)
+
+@media only screen and (max-width : 992px)
+  .seminars-wrapper
+    display: none
+
+  .sorting-box select
+    min-width: 125px
+
+  .sorting-box-view select
+    min-width: 60px
+
+@media only screen and (max-width : 940px)
+  .btn-sidebar-mobile
+    display: flex
+    align-items: center
+    justify-content: center
+
+  .sidebar
+    position: fixed
+    left: -100%
+    top: 0
+    z-index: 50
+    background: #fff
+    padding: 20px 20px 30px 20px
+    height: 100%
+    overflow: auto
+    .btn-accent
+      width: 150px
+    .btn-close
+      display: flex
+      margin: 0 0 20px
+      text-align: right
+      justify-content: flex-end
+
+  .category-content__wrapper
+    width: 100%
+    padding: 0
+
+@media only screen and (max-width : 920px)
+  .box-location
+    max-width: 200px
+
+  .menu-links
+    margin: 0 15px 0 0
+
+  .category-tile__box
+    height: 200px
+
+  .coach-card
+    flex-direction: column
+    align-items: center
+    .text
+      width: 100%
+      padding: 20px 0 0 0
+      .name
+        text-align: center
+
+  .product-content
+    padding: 0
+
+
+@media only screen and (max-width : 840px)
+  .product-content__information
+    .line
+      flex-wrap: wrap
+      margin: 0 0 20px
+    .box
+      margin: 0 0 10px
+
+@media only screen and (max-width : 820px)
+  .contacts-box, .map
+    width: 100%
+    padding: 0
+
+  .map
+    height: 250px
+
+  .contacts-box
+    border: none
+      bottom: 1px solid #561f51
+    padding: 0 0 20px
+    margin: 0 0 20px
+    .box-location
+      max-width: none
+
+  .category-tile__description
+    font-size: 12px
+
+
+@media only screen and (max-width : 790px)
+  header
+    .navigation, .box-location
+      display: none
+
+  .form-search
+    width: 100%
+    order: 1
+    margin: 0 auto 10px
+
+  .btn-mobile-menu
+    display: flex
+
+  .header-bottom
+    display: none
+
+  .main-slider__content
+    .text
+      max-width: none
+
+  .category-tile__box
+    height: 150px
+
+@media only screen and (max-width : 710px)
+  .footer-box
+    width: 100%
+    &:last-child
+      margin: 20px 0
+
+    &:nth-child(2), &:nth-child(3), &:nth-child(4)
+      width: 33.33%
+      margin: 10px 0 0
+      order: 1
+      text-align: center
+      align-items: center
+      h3
+        text-align: center
+    .logo
+      margin: 0 auto
+    .menu
+      margin: 0 0 10px
+      align-items: center
+
+  .calendar-week .td
+    font-size: 10px
+
+  .calendar-date
+    font-size: 16px
+    padding: 15px 0
+
+  .calendar-body .day .data
+    font-size: 14px
+
+  .team-event
+    font-size: 11px
+    max-height: 25px
+
+  .tooltip
+    font-size: 10px
+
+  .calendar-slider
+    .slick-arrow
+      top: 6%
+
+@media only screen and (max-width : 675px)
+  .category-tile__box
+    width: 100%
+    height: auto
+    .image
+      img
+        min-height: auto
+        width: 100%
+        flex: auto
+
+  .advantages-box
+    width: 100%
+    margin: 0
+
+  .sorting-box
+    width: 50%
+    margin: 15px 0 0 0
+    order: 1
+    justify-content: center
+
+  .category-content__wrapper .tabs__caption
+    width: 50%
+    justify-content: flex-end
+    margin: 0
+
+
+@media only screen and (max-width : 640px)
+  .product-content__information
+    width: 100%
+    padding: 0
+    margin: 20px 0 0 0
+
+  .tabs__caption li
+    font-size: 14px
+
+@media only screen and (max-width : 620px)
+  .footer-bottom
+    flex-direction: column
+    align-items: center
+
+  .developer
+    text-align: center
+    margin: 10px 0
+
+  .calendar-wrapper
+    overflow: auto
+
+  .calendar-body, .calendar-week
+    min-width: 580px
+
+@media only screen and (max-width : 580px)
+  .sale-box, .coach-card
+    width: 100%
+
+  .reviews-box
+    max-width: none
+    margin: 0 auto 70px
+    width: 100%
+    padding: 60px 20px 20px 20px
+    .image
+      top: -45px
+      left: 50%
+      transform: translate(-50%,0)
+    .text
+      .name
+        text-align: center
+
+  .reviews-content
+    .form-reviews
+      margin: 0
+
+  .tabs__caption li
+    width: 100%
+
+  .customer-reviews
+    padding: 0
+    margin: 0
+
+  .date
+    font-size: 10px
+
+@media only screen and (max-width : 520px)
+  .sorting-box
+    display: none
+
+  .category-content__wrapper .tabs__caption
+    width: auto
+
+  .product-cart-list
+    flex-direction: column
+    align-items: center
+    .text
+      width: 100%
+
+
+
+@media only screen and (max-width : 440px)
+  .phone
+    font-size: 16px
+
+  .btn-accent
+    width: 150px
+    height: 35px
+
+  .box-basket
+    font-size: 30px
+
+  .logo
+    width: 100px
+
+  h2, .title
+    font-size: 22px
+
+  .banner-title
+    font-size: 20px
+
+
+
+@media only screen and (max-width : 380px)
+  .list-social
+    li
+      a
+        width: 20px
+        height: 20px
+        min-width: 20px
+        font-size: 10px
+        margin: 0 0 0 5px
+
+  .phone
+    font-size: 14px
+
+  .btn-accent
+    width: 130px
+    height: 28px
+    font-size: 14px
+
+  .footer-box:nth-child(2), .footer-box:nth-child(3), .footer-box:nth-child(4)
+    width: 100%
+
+  .footer-box:last-child
+    max-width: 200px
+    margin: 20px auto
+
+  .conditions-sale
+    font-size: 12px
+
+  .title-sale
+    font-size: 16px
+
+  .sale-content
+    margin: 20px 0
+
+  .sale-box
+    .date
+      font-size: 14px
+
+  .product-content__information
+    .btn-accent
+      width: 180px
+      height: 38px
+    .list-rating
+      margin: 0 0 10px
+
+  .tabs__content
+    ul, p
+      font-size: 14px
+
+  .customer-reviews .text
+    padding: 20px 0 0

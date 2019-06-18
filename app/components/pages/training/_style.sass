@@ -1,0 +1,193 @@
+.training-content
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-around
+  margin: 40px 0 0
+
+.coach-card
+  width: 47%
+  margin: 0 auto 30px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  padding: 20px 30px
+  box-sizing: border-box
+  border: 2px solid rgba(113, 39, 245, 0.5)
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+  .image
+    width: 170px
+  .text
+    width: calc(100% - 170px)
+    padding: 0 0 0 30px
+    .name
+      font-size: 18px
+      font-family: 'arial-bold', sans-serif
+    .date
+      width: 100%
+      text-align: right
+      margin: 10px 0
+    .description-coach
+      font-size: 14px
+    .team-coach
+      font-size: 15px
+      text-decoration: underline
+      text-align: center
+      margin: 0 0 10px
+      color: $subtitle
+      font-family: 'arial-bold', sans-serif
+    ul
+      margin: 10px 0 0
+      font-size: 14px
+      li
+        margin: 0 0 5px
+    h6
+      font-size: 15px
+      margin: 10px 0 0
+      text-decoration: underline
+  .btn
+    margin: 30px auto 10px
+
+.calendar
+  width: 100%
+  border: 1px solid $accent
+  box-sizing: border-box
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+  margin: 30px 0
+
+.calendar-date
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  text-transform: uppercase
+  font-family: 'arial-bold', sans-serif
+  font-size: 20px
+  padding: 20px 0
+  border-bottom: 1px solid $accent
+  color: $subtitle
+  background: $accent
+  .year
+    margin: 0 0 0 10px
+
+.calendar-week
+  width: 100%
+  background: lighten($subtitle, 7%)
+  display: flex
+  align-items: center
+  justify-content: space-between
+  text-align: center
+  .td
+    font-size: 14px
+    width: 14.2857%
+    padding: 10px 5px
+    box-sizing: border-box
+    text-align: center
+    color: #fff
+    border-right: 1px solid $accent
+    &:last-child
+      border: none
+
+.calendar-body
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: flex-start
+  &:last-child
+    .day
+      border-bottom: none
+  .before-month
+    background: rgba($subtitle, .2)
+
+  .day
+    width: 14.2857%
+    height: 100px
+    max-height: 100px
+    padding: 5px
+    box-sizing: border-box
+    border:
+      right: 1px solid $accent
+      bottom: 1px solid $accent
+    display: flex
+    flex-direction: column
+    position: relative
+    .data
+      text-align: center
+      background: $accent
+      color: #000
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 10px 0 10px auto
+    &:last-child
+      border-right: none
+    .date-time
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      //margin: 10px 0
+      .time
+        font-size: 14px
+
+
+.tooltip
+  position: absolute
+  background: $accent
+  padding: 10px
+  box-sizing: border-box
+  font-size: 12px
+  left: 0
+  bottom: 105%
+  border-radius: 3px
+  opacity: 0
+  visibility: hidden
+  transition: .3s ease
+  pointer-events: none
+
+.event
+  position: relative
+  &:hover
+    .tooltip
+      opacity: 1
+      visibility: visible
+      pointer-events: auto
+
+.team-event
+  cursor: pointer
+  transition: .3s ease
+  font-size: 14px
+  max-height: 32px
+  overflow: hidden
+  display: flex
+  align-items: flex-start
+  &:hover
+    color: $number
+    .icon
+      transform: scale(1.1)
+  .icon
+    width: 15px
+    min-width: 15px
+    margin: 0 4px 0 0
+    height: 15px
+    transition: .3s ease
+
+.calendar-wrapper, .calendar-slider
+  width: 100%
+
+.calendar-slider
+  .slide
+    padding: 0 15px
+  .slick-arrow
+    top: 7%
+    transform: translate(0)
+  .slick-prev
+    left: 20px
+  .slick-next
+    right: 20px
+

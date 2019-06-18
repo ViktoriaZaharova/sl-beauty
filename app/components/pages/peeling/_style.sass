@@ -1,0 +1,159 @@
+.category
+  width: 100%
+
+.category-content
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: flex-start
+
+.sidebar
+  width: 280px
+  .button-group
+    display: flex
+    justify-content: space-between
+    align-items: center
+  .btn-close
+    display: none
+
+.category-content__wrapper
+  width: calc(100% - 280px)
+  padding: 0 0 0 40px
+  .tabs__content
+    width: 100%
+    justify-content: space-between
+    flex-wrap: wrap
+    flex-direction: row
+    padding: 0
+    .product-cart
+      margin: 0 0 30px
+  .tabs__caption
+    width: auto
+    margin: 0 0 0 auto
+    border-bottom: none
+
+
+.filter-box
+  width: 100%
+  margin: 0 0 30px
+  &:last-child
+    margin: 0
+  .in
+    &:before
+      transform: rotate(180deg)
+  .filter-box__title
+    width: 100%
+    padding: 10px 20px
+    background: $header
+    color: #ffffff
+    position: relative
+    cursor: pointer
+    &:before
+      content: '\f107'
+      font-family: 'fontawesome', sans-serif
+      position: absolute
+      right: 15px
+      top: 50%
+      transform: translate(0,-50%)
+      transition: .3s ease
+
+
+.filter-box__content
+  border: 1px solid $header
+    top: none
+  padding: 15px
+  label
+    margin: 0 0 10px
+    .label
+      font-size: 14px
+    &:last-child
+      margin: 0
+
+
+.sorting-wrapper
+  border-bottom: 1px solid #561f51
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 30px
+
+.sorting-box
+  margin: 0 30px 0 0
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  p
+    margin: 0 10px 0 0
+  select
+    min-width: 150px
+
+.sorting-box-view
+  margin: 0
+  select
+    min-width: 70px
+
+.pagination
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  margin: 40px auto
+  li
+    margin: 0 7px
+    a
+      padding: 10px
+      width: 30px
+      height: 30px
+      border-radius: 2px
+      background: linear-gradient(to bottom, #8a4cf9 0, #6a1ff0 100%)
+      color: #fff
+      display: flex
+      align-items: center
+      justify-content: center
+      text-align: center
+      font-size: 14px
+      &:hover
+        background: linear-gradient(to bottom, #6a1ff0 0, #8a4cf9 100%)
+
+.seminars-wrapper
+  width: 100%
+  display: flex
+  flex-direction: column
+  margin: 40px 0 0
+  h3
+    font-family: 'arial-bold', sans-serif
+    margin: 0 0 20px
+    width: 100%
+
+    border-bottom: 1px solid #841e78
+
+.seminars-preview
+  border: 1px solid #841e78
+  display: flex
+  align-items: center
+  padding: 20px 10px
+  margin: 0 0 20px
+  &:last-child
+    margin: 0
+  .image
+    width: 70px
+    min-width: 70px
+    height: 70px
+  .name
+    font-size: 16px
+    padding: 0 0 0 15px
+    color: $number
+  &:hover
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+
+.btn-sidebar-mobile
+  height: 38px
+  background: $footer
+  padding: 3px 15px
+  font-size: 18px
+  color: #fff
+  margin: 0 auto 0 0
+  display: none
