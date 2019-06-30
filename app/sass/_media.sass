@@ -34,6 +34,14 @@
   .sorting-box-view select
     min-width: 60px
 
+  .training-page-content
+    .line
+      flex-direction: column
+      align-items: center
+
+  .card-doctor
+    margin: 0 auto 30px
+
 @media only screen and (max-width : 940px)
   .btn-sidebar-mobile
     display: flex
@@ -201,6 +209,33 @@
     justify-content: flex-end
     margin: 0
 
+  .card-doctor
+    flex-direction: column-reverse
+    align-items: center
+    .text
+      max-width: none
+      width: 100%
+      padding: 0
+      margin: 0 auto 30px
+
+  .form-wrapper
+    flex-direction: column
+    align-items: center
+    .left, .right
+      width: 100%
+    .right
+      margin: 30px auto 0
+    .map
+      height: 250px
+    .box-location
+      max-width: none
+
+  .cabinet-content
+    flex-direction: column
+    align-items: center
+    .right, .user-data
+      max-width: 100%
+      width: 100%
 
 @media only screen and (max-width : 640px)
   .product-content__information
@@ -270,7 +305,8 @@
     .text
       width: 100%
 
-
+  .time-training li p
+    padding: 10px 15px
 
 @media only screen and (max-width : 440px)
   .phone
@@ -292,7 +328,12 @@
   .banner-title
     font-size: 20px
 
-
+  .line-sale
+    flex-wrap: wrap
+    h6
+      margin: 0 0 10px
+      width: 100%
+      text-align: center
 
 @media only screen and (max-width : 380px)
   .list-social
@@ -345,3 +386,7 @@
 
   .customer-reviews .text
     padding: 20px 0 0
+
+  .user-data .line h6
+    font-size: 14px
+    min-width: 70px
