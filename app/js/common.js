@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+    // rating
+    $(".rating").starRating({
+        starSize: 25,
+        callback: function(currentRating, $el){
+            // make a server call here
+        }
+    });
+    // rating end
+
     // slider
     $('.main-slider').slick({
         infinite: true,
